@@ -5,7 +5,7 @@ import java.time.Year;
 public class Main {
     public static void main(String[] args) {
         Car andreeasCar = new Car("Honda", "Civic", Year.of(2018), "124");
-        Car johnsCar = new Car("Honda", "Civic", Year.of(2018), "124");
+        Car johnsCar = new Car("Skoda", "Octavia", Year.of(2018), "124");
         Car alexsCar = new Car("Honda", "Civic", Year.of(2018), "146");
 
         System.out.println("IsSameCar: " + (andreeasCar == johnsCar));

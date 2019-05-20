@@ -13,10 +13,16 @@ import java.util.List;
 public class Iterators {
     public static void main(String[] args) {
         List<Person> myList = createList();
+/*
 
         for (int i = 0; i < myList.size(); i++) {
             System.out.println("Simple for: The person is:" + myList.get(i));
         }
+
+        for (Person aPerson : myList) {
+            System.out.println("Foreach: The person is:" + aPerson);
+        }
+*/
 
         for (Iterator<Person> it = myList.iterator(); it.hasNext(); ) {
             Person person = it.next();
@@ -24,10 +30,6 @@ public class Iterators {
             if (person.getAge() < 18) {
                 it.remove();
             }
-        }
-
-        for (Person aMyList : myList) {
-            System.out.println("Foreach: The person is:" + aMyList);
         }
     }
 

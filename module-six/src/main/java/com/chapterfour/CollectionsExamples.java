@@ -1,9 +1,11 @@
-package com.chapterthree;
+package com.chapterfour;
 
+import com.chapterthree.Person;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class ArrayLists {
+public class CollectionsExamples {
     public static void main(String[] args) {
 
         List<Person> myList = new ArrayList<>();
@@ -16,9 +18,11 @@ public class ArrayLists {
         myList.add(new Person("Arya Stark", 12));
 
         System.out.println(myList);
-        System.out.println("Get element: " + myList.get(4));
-        System.out.println("Get John: " + myList.indexOf(new Person("John Snow", 32)));
-        System.out.println("Get John: " + myList.remove(4));
-        System.out.println(myList.size());
+        Collections.sort(myList);
+        Person min = Collections.max(myList);
+        Collections.shuffle(myList);
+        System.out.println(myList);
+
+        Collections.shuffle(myList);
     }
 }
