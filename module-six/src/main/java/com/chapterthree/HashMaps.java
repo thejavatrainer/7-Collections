@@ -22,6 +22,6 @@ public class HashMaps {
 
         System.out.println(personMap);
 
-        System.out.println("The person with the given ID is: " + personMap.get("ID257"));
+        System.out.println("The person with the given ID is: " + personMap.containsKey("ID257"));
     }
 }
