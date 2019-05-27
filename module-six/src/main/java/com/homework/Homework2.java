@@ -14,6 +14,7 @@ import java.util.*;
  * <p>
  * >java Concordance Hello World
  * {d=[9], o=[4, 6], r=[7], W=[5], H=[0], l=[2, 3, 8], e=[1]}
+ * 
  */
 
 public class Homework2 {
@@ -42,11 +43,12 @@ public class Homework2 {
         for (int i = 0; i < string.length(); i++) {
             mysets.add(string.charAt(i));
         }
+       int mysetsSize = mysets.size();
         while (mysets.size()>0){
             char testChar = mysets.get(0);
-            String myMapstring= " "+testChar;
+            String myMapstring= " ";
             while (mysets.contains(testChar) ) {
-                myMapstring= myMapstring+mysets.indexOf(testChar);
+                myMapstring= myMapstring+(mysets.indexOf(testChar)+(mysetsSize-mysets.size())+",");
                 mysets.remove(mysets.indexOf(testChar));
 
             }
