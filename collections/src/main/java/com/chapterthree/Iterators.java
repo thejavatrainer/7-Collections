@@ -3,9 +3,9 @@
  *            Registered with Commercial Court Vienna,
  *            reg.no. FN 72.115b.
  */
-package com.chapterfour;
+package com.chapterthree;
 
-import com.chapterthree.Person;
+import com.chaptertwo.Person;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

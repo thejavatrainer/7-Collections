@@ -3,7 +3,7 @@
  *            Registered with Commercial Court Vienna,
  *            reg.no. FN 72.115b.
  */
-package com.chapterthree;
+package com.chaptertwo;
 
 import java.util.TreeMap;
 

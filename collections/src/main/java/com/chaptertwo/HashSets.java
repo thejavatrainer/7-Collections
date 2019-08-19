@@ -1,4 +1,4 @@
-package com.chapterthree;
+package com.chaptertwo;
 
 import java.util.HashSet;
 import java.util.Set;
